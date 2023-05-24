@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+}
+
+h2, li, button{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+li {
+    display: inline;
+    padding: 8px;
+    color: #767676;
+}
+
+
+.logo{
+    font-size: 24px;
+}
+  
+
+li:hover {
+    color: #333;
+  }
+
+.active {
+    color: #333;
+}
+
+button{
+    float: right;
+    color: #ffffff;
+    padding: 8px 16px 8px 16px;
+    background-color:  #04ddb2;
+    border-radius: 24px;
+    border: none;
+    
+}
+

@@ -9,6 +9,7 @@
 .nav_container {
     max-width: 1400px;
     margin: 14px auto;
+    padding: 0px 40px;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -68,6 +69,10 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #767676;
+}
+
+.bars {
+    display: none;
 }
 
 ---------------------------------
@@ -215,6 +220,10 @@ footer .resources ul li:hover,
 }
 
 @media screen and (max-width: 440px) {
+    body {
+    min-width: 275px;
+
+    }
     main {
         margin: 1rem;
     }
@@ -314,7 +323,7 @@ footer .resources ul li:hover,
         flex-direction: row;
     }
     footer {
-        margin: 1rem;
+        /* margin: 1rem; */
         flex-direction: row;
         text-align: center;
         justify-content: center;
@@ -324,8 +333,30 @@ footer .resources ul li:hover,
     }
 }
 
+@media screen and (max-width: 800px) {
+    .bars {
+        display: block;
+        font-size: 22px;
+        background: #eef0f2;
+        color: #333;
+        padding: .3rem .8rem;
+        border-radius: 9px;
+        cursor: pointer;
+        transition: .2s ease-in-out all;
+        margin-left: 10px;
+    }
+
+    .bars:hover  {
+        opacity: .9;
+    }
+
+    .menu, .download {
+        display: none;
+    }
+}
 
 @media screen and (min-width: 980px) {
+    
     main {
         margin: 0 auto;
     } 
@@ -365,6 +396,8 @@ footer .resources ul li:hover,
     footer {
         text-align: start;
         justify-content: space-evenly;
+        max-width: 900px;
+        margin: 0 auto;
     }
           
     footer ul {
